@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Restaurant | Happy Résidence - Lomé, Togo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.jpeg" alt="Happy Résidence Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1 class="logo-title">HAPPY RÉSIDENCE</h1>
+                        <p class="logo-subtitle">LOMÉ • TOGO</p>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="chambres.html" class="nav-link">Nos Chambres</a></li>
+                        <li><a href="evenements.html" class="nav-link">Événements & Séminaires</a></li>
+                        <li><a href="restaurant.html" class="nav-link active">Notre Restaurant</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Réserver</a>
+                </nav>
+                
+                <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+                    <li><a href="chambres.html" class="mobile-nav-link">Nos Chambres</a></li>
+                    <li><a href="evenements.html" class="mobile-nav-link">Événements & Séminaires</a></li>
+                    <li><a href="restaurant.html" class="mobile-nav-link active">Notre Restaurant</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary mobile-cta">Réserver</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070&auto=format&fit=crop" alt="Notre restaurant" class="page-header-bg" loading="lazy">
+        <div class="page-header-content">
+            <h1 class="page-title">Notre Restaurant</h1>
+            <p class="page-subtitle">Saveurs du monde et authenticité togolaise</p>
+        </div>
+    </section>
+
+    <section class="restaurant">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Menu</h2>
+                <p class="section-subtitle">Un voyage culinaire à travers l'Afrique et l'Europe</p>
+            </div>
+
+            <!-- Cuisine Africaine -->
+            <article class="menu-section fade-in">
+                <div class="menu-section-header">
+                    <div class="menu-section-icon-wrapper">
+                        <svg class="menu-section-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="menu-section-title">Cuisine Africaine</h3>
+                        <p class="menu-section-desc">Les saveurs traditionnelles de notre continent</p>
+                    </div>
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_afric/fufu+sauce_claire+viande_de_mouton.jpeg" alt="Fufu Sauce Claire Mouton" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Fufu & Sauce Claire (Mouton)</h4>
+                                <span class="menu-item-card-price">À partir de 5.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Pâte de manioc accompagnée de sauce claire et viande de mouton</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Fufu & Sauce Claire (Mouton)" data-prix="5.000">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_afric/atieke_poisson.jpeg" alt="Attiéké Poisson" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Attiéké Poisson</h4>
+                                <span class="menu-item-card-price">À partir de 4.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Attiéké frais accompagné de poisson frit et sauce piquante</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Attiéké Poisson" data-prix="4.500">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_afric/riz_au_gras.jpeg" alt="Riz au Gras" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Riz au Gras</h4>
+                                <span class="menu-item-card-price">À partir de 3.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Riz parfumé et riche, servi avec viande ou poisson</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Riz au Gras" data-prix="3.000">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_afric/riz_cantonnais.jpeg" alt="Riz Cantonnais" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Riz Cantonnais</h4>
+                                <span class="menu-item-card-price">À partir de 3.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Riz sauté avec légumes, œufs et viande</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Riz Cantonnais" data-prix="3.500">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_afric/aloco+poisson.jpeg" alt="Aloco Poisson" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Aloco Poisson</h4>
+                                <span class="menu-item-card-price">À partir de 4.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Plantains frits dorés accompagnés de poisson frais</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Aloco Poisson" data-prix="4.000">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_afric/sauce_adéme.jpeg" alt="Sauce Adémé" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Sauce Adémé</h4>
+                                <span class="menu-item-card-price">À partir de 3.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Sauce traditionnelle togolaise servie avec pâte ou riz</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Sauce Adémé" data-prix="3.500">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_afric/sauce_Blokoto.jpeg" alt="Sauce Blokoto" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Sauce Blokoto</h4>
+                                <span class="menu-item-card-price">À partir de 3.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Authentique sauce Blokoto aux saveurs du terroir</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Sauce Blokoto" data-prix="3.500">Commander</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Cuisine Européenne -->
+            <article class="menu-section fade-in">
+                <div class="menu-section-header">
+                    <div class="menu-section-icon-wrapper">
+                        <svg class="menu-section-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2v20"></path>
+                            <path d="M2 12h20"></path>
+                            <path d="M4.93 4.93l14.14 14.14"></path>
+                            <path d="M19.07 4.93L4.93 19.07"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="menu-section-title">Cuisine Européenne</h3>
+                        <p class="menu-section-desc">Classiques revisités avec nos touches africaines</p>
+                    </div>
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_euro/spaghetti_saucisse.jpeg" alt="Spaghetti Bolognaise" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Spaghetti Bolognaise</h4>
+                                <span class="menu-item-card-price">À partir de 3.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Pâtes fraîches avec sauce bolognaise et saucisses</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Spaghetti Bolognaise" data-prix="3.500">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/cuisine_euro/frites_poulet.jpeg" alt="Poulet & Frites" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Poulet & Frites</h4>
+                                <span class="menu-item-card-price">À partir de 4.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Poulet croustillant avec frites dorées et sauce</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Poulet & Frites" data-prix="4.500">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=800&auto=format&fit=crop" alt="Pâtes Carbonara" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Pâtes Carbonara</h4>
+                                <span class="menu-item-card-price">À partir de 4.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Pâtes crémeuses avec lardons et fromage</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Pâtes Carbonara" data-prix="4.000">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=800&auto=format&fit=crop" alt="Steak & Frites" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Steak & Frites</h4>
+                                <span class="menu-item-card-price">À partir de 6.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Juteux steak grillé avec frites et sauce au poivre</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Steak & Frites" data-prix="6.500">Commander</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Grillades & Brochettes -->
+            <article class="menu-section fade-in">
+                <div class="menu-section-header">
+                    <div class="menu-section-icon-wrapper">
+                        <svg class="menu-section-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="menu-section-title">Grillades & Brochettes</h3>
+                        <p class="menu-section-desc">Viandes fraîches grillées au charbon de bois</p>
+                    </div>
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Brochette de Boeuf" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Brochette de Boeuf</h4>
+                                <span class="menu-item-card-price">À partir de 2.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Brochettes de viande de boeuf marinée et grillée</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Brochette de Boeuf" data-prix="2.500">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/grillades/brochettes-poulet-grille-legumes-ete.png.webp" alt="Brochette de Poulet" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Brochette de Poulet</h4>
+                                <span class="menu-item-card-price">À partir de 2.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Tendres morceaux de poulet grillés aux épices</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Brochette de Poulet" data-prix="2.000">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/grillades/Brochettes-de-poissons-et-legumes-grilles1.jpg" alt="Brochette de Poisson" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Brochette de Poisson</h4>
+                                <span class="menu-item-card-price">À partir de 3.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Brochettes de poisson frais grillés aux aromates</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Brochette de Poisson" data-prix="3.000">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/grillades/mixed_grill.jpg" alt="Mixed Grill" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Mixed Grill</h4>
+                                <span class="menu-item-card-price">À partir de 7.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Plateau mixte : poulet, boeuf, poisson et brochettes</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Mixed Grill" data-prix="7.000">Commander</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Desserts -->
+            <article class="menu-section fade-in">
+                <div class="menu-section-header">
+                    <div class="menu-section-icon-wrapper">
+                        <svg class="menu-section-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="menu-section-title">Desserts</h3>
+                        <p class="menu-section-desc">Pour finir votre repas en douceur</p>
+                    </div>
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item-card">
+                        <img src="img/desserts/salade-de-fruits.jpg" alt="Salade de Fruits Frais" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Salade de Fruits Frais</h4>
+                                <span class="menu-item-card-price">À partir de 2.000 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Mangue, ananas, banane, papaye et orange frais</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Salade de Fruits Frais" data-prix="2.000">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?q=80&w=800&auto=format&fit=crop" alt="Glace Maison" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Glace Maison (2 boules)</h4>
+                                <span class="menu-item-card-price">À partir de 1.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Parfums disponibles : vanille, chocolat, mangue, fraise</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Glace Maison (2 boules)" data-prix="1.500">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/desserts/creme-caramel.jpg" alt="Crème Caramel" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Crème Caramel</h4>
+                                <span class="menu-item-card-price">À partir de 1.800 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Crème caramel onctueux fait maison</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Crème Caramel" data-prix="1.800">Commander</button>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="img/desserts/Tarte-Tatin.jpg" alt="Tarte Tatin aux Pommes" class="menu-item-img" loading="lazy">
+                        <div class="menu-item-card-content">
+                            <div class="menu-item-card-header">
+                                <h4>Tarte Tatin aux Pommes</h4>
+                                <span class="menu-item-card-price">À partir de 2.500 FCFA</span>
+                            </div>
+                            <p class="menu-item-card-desc">Classique français avec pommes caramélisées</p>
+                            <button class="btn btn-primary btn-small order-btn" data-plat="Tarte Tatin aux Pommes" data-prix="2.500">Commander</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="catering-info fade-in">
+                <h3 class="catering-title">Service Traiteur Professionnel</h3>
+                <p class="catering-text">Nous vous accompagnons pour tous vos événements : mariages, anniversaires, séminaires, conférences. Contactez-nous pour un devis personnalisé et adapté à vos besoins.</p>
+                <a href="contact.html" class="btn btn-primary">Demander un Devis</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="img/logo.jpeg" alt="Happy Résidence Logo" class="footer-logo-img">
+                        <h3 class="footer-title">Happy Résidence</h3>
+                    </a>
+                    <p class="footer-text">Votre établissement de référence pour un séjour de prestige, des événements inoubliables et une cuisine délicieuse au cœur de Lomé.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liens Rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="chambres.html" class="footer-link">Nos Chambres</a></li>
+                        <li><a href="evenements.html" class="footer-link">Événements & Séminaires</a></li>
+                        <li><a href="restaurant.html" class="footer-link">Notre Restaurant</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Heures d'Ouverture</h3>
+                    <ul class="footer-hours">
+                        <li><strong>Réception :</strong> 24h/24 - 7j/7</li>
+                        <li><strong>Restaurant :</strong> 07h00 - 22h00</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li><a href="tel:+22870205959" class="footer-link">+228 70 20 59 59</a></li>
+                        <li><a href="tel:+22898443030" class="footer-link">+228 98 44 30 30</a></li>
+                        <li><a href="mailto:happyresidencepro@gmail.com" class="footer-link">happyresidencepro@gmail.com</a></li>
+                        <li><a href="https://maps.app.goo.gl/DwYgNiYXTVV6hnTg8" class="footer-link" target="_blank">📍 Sanguéra, en face de la Poste de Sanguéra, Lomé, Togo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Happy Résidence. Tous droits réservés. Fait avec ❤️ à Lomé.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/22870205959?text=Bonjour%20Happy%20R%C3%A9sidence%2C%20je%20souhaite%20vous%20contacter%20pour%20le%20restaurant." target="_blank" class="whatsapp-float" aria-label="Contactez-nous sur WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

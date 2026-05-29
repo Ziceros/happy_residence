@@ -1,0 +1,235 @@
+@media (max-width: 1024px) {
+    .nav {
+        display: none;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .booking-form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rooms-grid,
+    .features-grid,
+    .services-grid,
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 0;
+    }
+
+    .logo-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-title {
+        font-size: 18px;
+    }
+
+    .logo-subtitle {
+        font-size: 9px;
+    }
+
+    .footer-logo-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero {
+        min-height: 500px;
+        margin-top: 70px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .booking-bar {
+        margin-top: -60px;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .rooms,
+    .events,
+    .restaurant,
+    .home-features,
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .rooms-grid,
+    .features-grid,
+    .services-grid,
+    .testimonials-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .room-image,
+    .event-image,
+    .feature-image {
+        height: 200px;
+    }
+
+    .menu-container {
+        padding: 30px 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .page-header {
+        height: 300px;
+        margin-top: 70px;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+    .contact-info-title,
+    .contact-form-title {
+        font-size: 28px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    /* Responsive pour la section FAQ et Avantages */
+    .faq-section,
+    .advantages-section {
+        padding: 30px 20px !important;
+    }
+
+    .faq-grid,
+    .advantages-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .faq-item {
+        padding: 20px !important;
+        border-left-width: 3px !important;
+    }
+
+    .advantage-item {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 26px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .room-content,
+    .event-content,
+    .feature-content {
+        padding: 20px;
+    }
+
+    .price-main {
+        font-size: 24px;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+
+    /* Responsive pour la section FAQ et Avantages */
+    .faq-grid,
+    .advantages-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .faq-item,
+    .advantage-item {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 24px !important;
+    }
+}

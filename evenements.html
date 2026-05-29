@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements & Séminaires | Happy Résidence - Lomé, Togo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=400;500;600;700&family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.jpeg" alt="Happy Résidence Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1 class="logo-title">HAPPY RÉSIDENCE</h1>
+                        <p class="logo-subtitle">LOMÉ • TOGO</p>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="chambres.html" class="nav-link">Nos Chambres</a></li>
+                        <li><a href="evenements.html" class="nav-link active">Événements & Séminaires</a></li>
+                        <li><a href="restaurant.html" class="nav-link">Notre Restaurant</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Réserver</a>
+                </nav>
+                
+                <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link">Accueil</a></li>
+                    <li><a href="chambres.html" class="mobile-nav-link">Nos Chambres</a></li>
+                    <li><a href="evenements.html" class="mobile-nav-link active">Événements & Séminaires</a></li>
+                    <li><a href="restaurant.html" class="mobile-nav-link">Notre Restaurant</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary mobile-cta">Réserver</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2070&auto=format&fit=crop" alt="Nos espaces événementiels" class="page-header-bg" loading="lazy">
+        <div class="page-header-content">
+            <h1 class="page-title">Événements & Séminaires</h1>
+            <p class="page-subtitle">Des espaces d'exception pour vos moments uniques</p>
+        </div>
+    </section>
+
+    <section class="events">
+        <div class="container">
+            <div class="events-grid">
+                <article class="event-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=800&auto=format&fit=crop" alt="La Place des Fêtes" class="event-image" loading="lazy">
+                    <div class="event-content">
+                        <h3 class="event-title">La Place des Fêtes</h3>
+                        <p class="event-description">Espace extérieur spacieux et élégant, parfait pour vos mariages, anniversaires, réceptions et grands événements. Capacité d'accueil importante et cadre enchanteur pour des moments inoubliables.</p>
+                        <div class="event-price">
+                            <span class="price-main">Prix très abordables</span>
+                        </div>
+                        <button class="btn btn-primary book-event-btn" data-event="La Place des Fêtes">Demander un Devis</button>
+                    </div>
+                </article>
+
+                <article class="event-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=800&auto=format&fit=crop" alt="La Salle de Conférence" class="event-image" loading="lazy">
+                    <div class="event-content">
+                        <h3 class="event-title">La Salle de Conférence</h3>
+                        <p class="event-description">Espace professionnel moderne et entièrement équipé pour vos séminaires, formations, réunions d'affaires et conférences. Technologie de pointe et confort optimal pour la productivité.</p>
+                        <div class="event-price">
+                            <span class="price-main">Tarifs sur-mesure</span>
+                        </div>
+                        <button class="btn btn-primary book-event-btn" data-event="La Salle de Conférence">Demander un Devis</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="img/logo.jpeg" alt="Happy Résidence Logo" class="footer-logo-img">
+                        <h3 class="footer-title">Happy Résidence</h3>
+                    </a>
+                    <p class="footer-text">Votre établissement de référence pour un séjour de prestige, des événements inoubliables et une cuisine délicieuse au cœur de Lomé.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liens Rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="chambres.html" class="footer-link">Nos Chambres</a></li>
+                        <li><a href="evenements.html" class="footer-link">Événements & Séminaires</a></li>
+                        <li><a href="restaurant.html" class="footer-link">Notre Restaurant</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Heures d'Ouverture</h3>
+                    <ul class="footer-hours">
+                        <li><strong>Réception :</strong> 24h/24 - 7j/7</li>
+                        <li><strong>Restaurant :</strong> 07h00 - 22h00</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li><a href="tel:+22870205959" class="footer-link">+228 70 20 59 59</a></li>
+                        <li><a href="tel:+22898443030" class="footer-link">+228 98 44 30 30</a></li>
+                        <li><a href="mailto:happyresidencepro@gmail.com" class="footer-link">happyresidencepro@gmail.com</a></li>
+                        <li><a href="https://maps.app.goo.gl/DwYgNiYXTVV6hnTg8" class="footer-link" target="_blank">📍 Sanguéra, en face de la Poste de Sanguéra, Lomé, Togo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Happy Résidence. Tous droits réservés. Fait avec ❤️ à Lomé.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/22870205959?text=Bonjour%20Happy%20R%C3%A9sidence%2C%20je%20souhaite%20vous%20contacter%20pour%20organiser%20un%20événement." target="_blank" class="whatsapp-float" aria-label="Contactez-nous sur WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

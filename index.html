@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Résidence - Hôtel & Complexe Événementiel | Lomé, Togo</title>
+    <meta name="description" content="Happy Résidence : votre établissement de prestige à Lomé, Sanguéra. Chambres confortables, espaces événementiels, restaurant et traiteur professionnel.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.jpeg" alt="Happy Résidence Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1 class="logo-title">HAPPY RÉSIDENCE</h1>
+                        <p class="logo-subtitle">LOMÉ • TOGO</p>
+                    </div>
+                </a>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                        <li><a href="chambres.html" class="nav-link">Nos Chambres</a></li>
+                        <li><a href="evenements.html" class="nav-link">Événements & Séminaires</a></li>
+                        <li><a href="restaurant.html" class="nav-link">Notre Restaurant</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="chambres.html" class="btn btn-primary">Réserver Maintenant</a>
+                </nav>
+                
+                <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="index.html" class="mobile-nav-link active">Accueil</a></li>
+                    <li><a href="chambres.html" class="mobile-nav-link">Nos Chambres</a></li>
+                    <li><a href="evenements.html" class="mobile-nav-link">Événements & Séminaires</a></li>
+                    <li><a href="restaurant.html" class="mobile-nav-link">Notre Restaurant</a></li>
+                    <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+                <a href="chambres.html" class="btn btn-primary mobile-cta">Réserver Maintenant</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-bg">
+            <source src="video/videofont.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-content">
+            <div class="container">
+                <p class="hero-subtitle">Bienvenue chez vous</p>
+                <h2 class="hero-title">Happy Résidence</h2>
+                <p class="hero-description">L'excellence hôtelière et événementielle au cœur de Sanguéra, Lomé. Confort, élégance et service exceptionnel vous attendent.</p>
+                <div class="hero-buttons">
+                    <a href="chambres.html" class="btn btn-primary">Découvrir Nos Chambres</a>
+                    <a href="contact.html" class="btn btn-outline light">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-bar">
+        <div class="container">
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="arrival">Date d'arrivée</label>
+                    <input type="date" id="arrival" name="arrival" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure">Date de départ</label>
+                    <input type="date" id="departure" name="departure" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Personnes</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Sélectionner</option>
+                        <option value="1">1 Adulte</option>
+                        <option value="2">2 Adultes</option>
+                        <option value="3">3 Adultes</option>
+                        <option value="4">4 Adultes</option>
+                        <option value="famille">Famille</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="spaceType">Type d'espace</label>
+                    <select id="spaceType" name="spaceType" required>
+                        <option value="">Sélectionner</option>
+                        <option value="Chambre Ventilée">Chambre Ventilée</option>
+                        <option value="Chambre Climatisée">Chambre Climatisée</option>
+                        <option value="Salon Meublé">Salon Meublé</option>
+                        <option value="Salle de Conférence">Salle de Conférence</option>
+                        <option value="Place des Fêtes">Place des Fêtes</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-accent">Vérifier Disponibilité</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Pour votre confort</p>
+                <h2 class="section-title">Nos Services Premium</h2>
+            </div>
+            
+            <div class="services-grid">
+                <article class="service-card fade-in">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3l9 18H3l9-18z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Wi-Fi Gratuit & Haut Débit</h3>
+                    <p class="service-text">Connexion Internet rapide disponible dans toutes les chambres et espaces communs. Restez connecté en toute simplicité.</p>
+                </article>
+                
+                <article class="service-card fade-in">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Réception 24h/24 & 7j/7</h3>
+                    <p class="service-text">Notre équipe est disponible à toute heure pour répondre à vos demandes et vous assister tout au long de votre séjour.</p>
+                </article>
+                
+                <article class="service-card fade-in">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.5 16 10 12 10s-6.7.5-7.5 1.1c-.8.2-1.5 1-1.5 1.9v3c0 .6.4 1 1 1h2"></path>
+                            <path d="M3 17v2c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2"></path>
+                            <circle cx="7" cy="17" r="2"></circle>
+                            <circle cx="17" cy="17" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Parking Sécurisé & Gratuit</h3>
+                    <p class="service-text">Grand parking surveillé disponible gratuitement pour tous nos clients et invités. Votre véhicule est en sécurité.</p>
+                </article>
+                
+                <article class="service-card fade-in">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Service Client Exceptionnel</h3>
+                    <p class="service-text">Une équipe attentionnée et professionnelle dévouée à rendre votre séjour parfait et mémorable.</p>
+                </article>
+                
+                <article class="service-card fade-in">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2z"></path>
+                            <polyline points="9 12 11 14 15 10"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Sécurité & Vidéosurveillance</h3>
+                    <p class="service-text">Système de sécurité avancé et personnel de sécurité pour votre tranquillité d'esprit 24h/24.</p>
+                </article>
+                
+                <article class="service-card fade-in">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-icon-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.77 3.77z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Nettoyage Quotidien</h3>
+                    <p class="service-text">Service de ménage quotidien complet pour que votre chambre soit toujours impeccable et confortable.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-features">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Notre établissement</p>
+                <h2 class="section-title">Découvrez Happy Résidence</h2>
+            </div>
+            
+            <div class="features-grid">
+                <article class="feature-card fade-in">
+                    <img src="img/galerie/chambre2.jpeg" alt="Hébergements confortables" class="feature-image" loading="lazy">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Chambres & Suites Confortables</h3>
+                        <p class="feature-description">Trois catégories d'hébergements adaptées à tous vos besoins : du confort essentiel au luxe absolu avec salon meublé.</p>
+                        <a href="chambres.html" class="btn btn-primary">Voir Toutes Les Chambres</a>
+                    </div>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <img src="img/galerie/place_deco2.jpeg" alt="Espaces événementiels" class="feature-image" loading="lazy">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Espaces Événementiels Exceptionnels</h3>
+                        <p class="feature-description">Notre Place des Fêtes et Salle de Conférence sont parfaits pour vos mariages, séminaires et réceptions de prestige.</p>
+                        <a href="evenements.html" class="btn btn-primary">Découvrir Nos Espaces</a>
+                    </div>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <img src="img/cuisine_afric/aloco+poisson.jpeg" alt="Restaurant et traiteur" class="feature-image" loading="lazy">
+                    <div class="feature-content">
+                        <h3 class="feature-title">Restaurant & Service Traiteur</h3>
+                        <p class="feature-description">Cuisine africaine et internationale de qualité, plus un service traiteur professionnel pour tous vos événements.</p>
+                        <a href="restaurant.html" class="btn btn-primary">Explorer Notre Menu</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-preview">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Un coup d'oeil</p>
+                <h2 class="section-title">Notre Galerie</h2>
+            </div>
+            
+            <div class="gallery-grid fade-in">
+                <div class="gallery-item">
+                    <img src="img/galerie/accueille1.jpeg" alt="Hall d'accueil" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/accueille2.jpeg" alt="Vue intérieure" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/chambre.jpeg" alt="Chambre simple" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/chambre2.jpeg" alt="Chambre confort" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/appart.jpeg" alt="Appartement" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/place_deco.jpeg" alt="Espace décoré" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/place_deco2.jpeg" alt="Espace événementiel" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/place_deco3.jpeg" alt="Salle décorée" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/place_deco4.jpeg" alt="Décoration événementiel" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/galerie/place_event.jpeg" alt="Place des fêtes" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/cuisine_afric/place_resto.jpeg" alt="Restaurant" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Ce qu'ils disent</p>
+                <h2 class="section-title">Nos Clients Satisfaits</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <article class="testimonial-card fade-in">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Mon séjour chez Happy Résidence a été tout simplement exceptionnel ! La chambre est spacieuse et propre, le personnel est incroyablement accueillant et le restaurant sert de délicieux plats. Je recommande à 100% !</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AM</div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Ami M.</h4>
+                            <p class="testimonial-role">Client régulier</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card fade-in">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Nous avons organisé notre mariage à la Place des Fêtes et c'était parfait ! L'équipe a pris soin de tous les détails, le traiteur était délicieux et nos invités ont adoré l'endroit. Merci à toute l'équipe !</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">KS</div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Koffi & Sika</h4>
+                            <p class="testimonial-role">Mariés</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="testimonial-card fade-in">
+                    <div class="testimonial-quote">"</div>
+                    <p class="testimonial-text">Notre séminaire d'entreprise a été un grand succès grâce à Happy Résidence ! La salle de conférence est parfaitement équipée, le service est impeccable et les pauses-café étaient délicieuses. Nous reviendrons !</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AL</div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Akouvi L.</h4>
+                            <p class="testimonial-role">Directrice d'entreprise</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2 class="cta-title">Prêt pour une expérience inoubliable ?</h2>
+                <p class="cta-text">Réservez votre chambre, organisez votre événement ou venez découvrir notre restaurant. Nous sommes impatients de vous accueillir.</p>
+                <div class="cta-buttons">
+                    <a href="chambres.html" class="btn btn-accent">Réserver Une Chambre</a>
+                    <a href="contact.html" class="btn btn-outline light">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="img/logo.jpeg" alt="Happy Résidence Logo" class="footer-logo-img">
+                        <h3 class="footer-title">Happy Résidence</h3>
+                    </a>
+                    <p class="footer-text">Votre établissement de référence pour un séjour de prestige, des événements inoubliables et une cuisine délicieuse au cœur de Lomé.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liens Rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Accueil</a></li>
+                        <li><a href="chambres.html" class="footer-link">Nos Chambres</a></li>
+                        <li><a href="evenements.html" class="footer-link">Événements & Séminaires</a></li>
+                        <li><a href="restaurant.html" class="footer-link">Notre Restaurant</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Heures d'Ouverture</h3>
+                    <ul class="footer-hours">
+                        <li><strong>Réception :</strong> 24h/24 - 7j/7</li>
+                        <li><strong>Restaurant :</strong> 07h00 - 22h00</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-contact">
+                        <li><a href="tel:+22870205959" class="footer-link">+228 70 20 59 59</a></li>
+                        <li><a href="tel:+22898443030" class="footer-link">+228 98 44 30 30</a></li>
+                        <li><a href="mailto:happyresidencepro@gmail.com" class="footer-link">happyresidencepro@gmail.com</a></li>
+                        <li><a href="https://maps.app.goo.gl/DwYgNiYXTVV6hnTg8" class="footer-link" target="_blank">📍 Sanguéra, en face de la Poste de Sanguéra, Lomé, Togo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Happy Résidence. Tous droits réservés. Fait avec ❤️ à Lomé.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/22870205959?text=Bonjour%20Happy%20R%C3%A9sidence%2C%20je%20souhaite%20vous%20contacter%20pour%20des%20informations." target="_blank" class="whatsapp-float" aria-label="Contactez-nous sur WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
