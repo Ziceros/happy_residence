@@ -845,10 +845,20 @@ body {
 }
 
 .menu-item-card-price {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--accent-color);
-    white-space: nowrap;
+    white-space: normal;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.menu-item-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .menu-item-card-desc {

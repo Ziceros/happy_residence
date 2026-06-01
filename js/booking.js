@@ -53,11 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
     bookRoomButtons.forEach(button => {
         button.addEventListener('click', function() {
             const roomType = this.getAttribute('data-room');
-            const priceCourt = this.getAttribute('data-price-court');
-            const priceLong = this.getAttribute('data-price-long');
+            const price1h = this.getAttribute('data-price-1h');
+            const price2h = this.getAttribute('data-price-2h');
+            const price3h = this.getAttribute('data-price-3h');
+            const priceHalfDay = this.getAttribute('data-price-halfday');
+            const priceNight = this.getAttribute('data-price-night');
 
             const message = encodeURIComponent(
-                `Bonjour Happy Résidence,\n\nJe suis intéressé(e) par la ${roomType}.\n\nTarifs :\n• Court séjour : ${priceCourt} FCFA / nuit\n• Long séjour : ${priceLong} FCFA / nuit\n\nVeuillez me confirmer la disponibilité et m'indiquer les modalités de réservation.\n\nMerci !`
+                `Bonjour Happy Résidence,\n\nJe suis intéressé(e) par la ${roomType}.\n\nTarifs disponibles :\n• 1 heure : ${price1h} FCFA\n• 2 heures+ : ${price2h} FCFA\n• 3 heures : ${price3h} FCFA\n• ½ journée : ${priceHalfDay} FCFA\n• Nuitée : ${priceNight} FCFA\n\nVeuillez me confirmer la disponibilité et m'indiquer les modalités de réservation.\n\nMerci !`
             );
 
             openWhatsApp(message);
